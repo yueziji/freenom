@@ -26,10 +26,11 @@ jobs:
           if [ '${{ secrets.MAIL_PASSWORD }}' != '' ]; then sed -i "s/^MAIL_PASSWORD=.*$/MAIL_PASSWORD='${{ secrets.MAIL_PASSWORD }}'/" .env; fi
           if [ '${{ secrets.TO }}' != '' ]; then sed -i "s/^TO=.*$/TO='${{ secrets.TO }}'/" .env; fi
           if [ '${{ secrets.MAIL_ENABLE }}' != '' ]; then sed -i "s/^MAIL_ENABLE=.*$/MAIL_ENABLE='${{ secrets.MAIL_ENABLE }}'/" .env; fi
-          if [ '${{ secrets.TELEGRAM_CHAT_ID }}' != '' ]; then sed -i "s/^TELEGRAM_CHAT_ID=.*$/TELEGRAM_CHAT_ID='${{ secrets.TELEGRAM_CHAT_ID }}'/" .env; fi
-          if [ '${{ secrets.TELEGRAM_BOT_TOKEN }}' != '' ]; then sed -i "s/^TELEGRAM_BOT_TOKEN=.*$/TELEGRAM_BOT_TOKEN='${{ secrets.TELEGRAM_BOT_TOKEN }}'/" .env; fi
-          if [ '${{ secrets.TELEGRAM_BOT_ENABLE }}' != '' ]; then sed -i "s/^TELEGRAM_BOT_ENABLE=.*$/TELEGRAM_BOT_ENABLE='${{ secrets.TELEGRAM_BOT_ENABLE }}'/" .env; fi
+          if [ '${{ secrets.WECHAT_AGENT_ID }}' != '' ]; then sed -i "s/^WECHAT_AGENT_ID=.*$/WECHAT_AGENT_ID='${{ secrets.WECHAT_AGENT_ID }}'/" .env; fi
+          if [ '${{ secrets.WECHAT_CORP_SECRET }}' != '' ]; then sed -i "s/^WECHAT_CORP_SECRET=.*$/WECHAT_CORP_SECRET='${{ secrets.WECHAT_CORP_SECRET }}'/" .env; fi
+          if [ '${{ secrets.WECHAT_AGENT_ID }}' != '' ]; then sed -i "s/^WECHAT_AGENT_ID=.*$/WECHAT_AGENT_ID='${{ secrets.WECHAT_AGENT_ID }}'/" .env; fi
           if [ '${{ secrets.NOTICE_FREQ }}' != '' ]; then sed -i "s/^NOTICE_FREQ=.*$/NOTICE_FREQ='${{ secrets.NOTICE_FREQ }}'/" .env; fi
+          if [ '${{ secrets.WECHAT_ENABLE }}' != '' ]; then sed -i "s/^WECHAT_ENABLE=.*$/WECHAT_ENABLE='${{ secrets.WECHAT_ENABLE }}'/" .env; fi
           sed -i "s/^ON_GITHUB_ACTIONS=.*$/ON_GITHUB_ACTIONS=true/" .env
       - name: Renewing Freenom domains
         run: |
