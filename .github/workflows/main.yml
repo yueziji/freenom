@@ -31,6 +31,7 @@ jobs:
           if [ '${{ secrets.WECHAT_AGENT_ID }}' != '' ]; then sed -i "s/^WECHAT_AGENT_ID=.*$/WECHAT_AGENT_ID='${{ secrets.WECHAT_AGENT_ID }}'/" .env; fi
           if [ '${{ secrets.NOTICE_FREQ }}' != '' ]; then sed -i "s/^NOTICE_FREQ=.*$/NOTICE_FREQ='${{ secrets.NOTICE_FREQ }}'/" .env; fi
           if [ '${{ secrets.WECHAT_ENABLE }}' != '' ]; then sed -i "s/^WECHAT_ENABLE=.*$/WECHAT_ENABLE='${{ secrets.WECHAT_ENABLE }}'/" .env; fi
+          if [ '${{ secrets.SHOW_SERVER_INFO }}' != '' ]; then sed -i "s/^SHOW_SERVER_INFO=.*$/SHOW_SERVER_INFO='${{ secrets.SHOW_SERVER_INFO }}'/" .env; fi
           sed -i "s/^ON_GITHUB_ACTIONS=.*$/ON_GITHUB_ACTIONS=true/" .env
       - name: Renewing Freenom domains
         run: |
