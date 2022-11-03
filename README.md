@@ -32,6 +32,8 @@ Documentation: [English version](https://github.com/luolongfei/freenom/blob/main
 
 [📦 通过 Koyeb 部署](#-通过-Koyeb-部署)（推荐没有自己服务器的用户使用此方案，一键部署）
 
+[🧪 通过 Mogenius 部署](#-通过-Mogenius-部署)（如果你无法注册 Koyeb 账户，可以考虑在 Mogenius 部署）
+
 [☁ 通过 各种云函数 部署](#-通过各种云函数部署)
 
 [🚧 直接拉取源码部署](#-直接拉取源码部署)
@@ -61,9 +63,9 @@ Documentation: [English version](https://github.com/luolongfei/freenom/blob/main
 - 本次封禁导致的直接后果是以前的`issues`全部丢失，以及近`1.8k`的`star`数重新归零，在动力上面确实有受到影响，不过也不会有太大影响，本项目依然长期维护，如果项目有帮到你，欢迎 star。
 - 狡兔三窟，临时仓库 https://github.com/luolongfei/next-freenom 也是备用仓库，如若本仓库再次失联，可以移步到备用仓库获取最新消息，正常情况下以后的开发维护依然在本仓库进行。
 - 推荐 [🐳 通过 Docker 方式部署](#-通过-docker-部署)。如果你没有自己的服务器，可参考本文档 [📦 通过 Koyeb 部署](#-通过-Koyeb-部署) 。
-- 热心网友创建了`Freenom 续期事务局`群组，可供交流、测试、反馈，加入可直接访问 [https://t.me/freenom_auto_renew](https://t.me/freenom_auto_renew) ，或者扫码加入：
+- 热心网友创建了`Freenom 续期事务局`群组，可供交流、测试、反馈， **加入可直接访问 [https://t.me/freenom_auto_renew](https://t.me/freenom_auto_renew) ，或者扫码加入：**
 
-<a href="https://s1.ax1x.com/2022/08/29/vfEpi8.png"><img src="https://s1.ax1x.com/2022/08/29/vfEpi8.png" alt="freenom_tg_group.png" border="0" width="220px" height="280px" /></a>
+<a href="https://t.me/freenom_auto_renew"><img src="https://s2.loli.net/2022/10/11/k4sSoXqMVfpIY3d.png" alt="freenom_tg_group.png" border="0" width="220px" height="280px" /></a>
 
 ### 🌿 特别感谢 Special Thanks
 
@@ -438,6 +440,12 @@ systemctl restart docker
 **在看完上行文档的具体内容，并且你确定你行后**，便可点击下方按钮，尝试一键部署：
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&name=freenom&ports=80;http;/&env[FF_TOKEN]=20190214&env[SHOW_SERVER_INFO]=1&env[MOSAIC_SENSITIVE_INFO]=1&env[FREENOM_USERNAME]=&env[FREENOM_PASSWORD]=&env[MULTIPLE_ACCOUNTS]=&env[TELEGRAM_CHAT_ID]=&env[TELEGRAM_BOT_TOKEN]=&env[TELEGRAM_BOT_ENABLE]=0&image=docker.io/luolongfei/freenom:koyeb)
+
+***
+
+### 🧪 通过 Mogenius 部署
+
+暂时没时间写详细教程，有兴趣的可以自己尝试一下。参考我此处的说明事项： [https://github.com/luolongfei/freenom/issues/146](https://github.com/luolongfei/freenom/issues/146) 
 
 ***
 
